@@ -1,0 +1,48 @@
+html {
+    height: 100%;
+}
+/* body {
+    background:
+    url("../images/profile-background-image.jpeg");
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    /* background-size: cover; */
+    /* height: 100%; */
+    /* height: 1200px; */
+    /* color: white; */
+/* }*/
+
+body {
+      
+    background: url("/images/layer-3-blackish-transparent.png"),url("/images/sign-set-transparent-lower.png"),url("/images/layer-2-darkgray-transparent.png"),url("/images/layer-1-gray-transparent.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+
+#jumbotron-container {
+    color: white;
+}
+
+#jumbotron {
+    text-align: center;
+}
+
+#about-me-header {
+    text-align: center;
+}
+
+#headshot {
+    text-align: center;
+}
+
+#portfolio-header{
+    text-align: center;
+    color: whitesmoke;
+    font-family: cursive; 
+    font-size: 28px;
+}
