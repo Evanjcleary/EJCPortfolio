@@ -92,11 +92,31 @@ h2 {
 }
 
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 800px) {
     .row {
+        height: 850px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #car-ins-row {
         height: 750px;
     }
 }
+
+@media screen and (max-width: 800px) {
+    #car-ins-row {
+        height: 950px;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .portfolio-row {
+        height: 1200px;
+    }
+}
+
 
 p {
     /* padding: 20 20 0 10; */
