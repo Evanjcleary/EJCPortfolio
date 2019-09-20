@@ -14,14 +14,52 @@ html {
 /* }*/
 
 body {
-      
+/*       
     background: url("/images/layer-3-blackish-transparent.png"),url("/images/sign-set-transparent-lower.png"),url("/images/layer-2-darkgray-transparent.png"),url("/images/layer-1-gray-transparent.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
   }
 
+
+
+
+.container-index {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #f9f9f9;
+    font-size: 24px;
+    /* padding: 25px; */
+}
+
+h1 {
+    font-family: 'Viga', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+h2 {
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    font-family: 'Caveat', cursive;
+}
+
+
+.parralax-index {
+    background: url("/images/layer-5-foreground-transparent.png"),url("/images/layer-4-hills-transparent.png"),url("/images/layer-3-blackish-transparent.png"),url("/images/layer-2-darkgray-transparent.png"),url("/images/layer-1-gray-transparent.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    max-width: 100%;
+}
+
+p {
+    padding: 50px;
+}
 
 
 #jumbotron-container {
