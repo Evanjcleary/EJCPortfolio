@@ -1,49 +1,131 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <h3 class="text-white">ECEnterprises, LLC</h3>
+
+    <form class="form-inline" id="navbar-linkbtns">
+        <button class="btn btn-outline-success" type="button">LinkedIn</button>
+        <button class="btn btn-outline-success" type="button">Github</button>
+        <button class="btn btn-outline-success" type="button">Resume</button>
+    </form>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Resources
+                </a>
+                <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" id="employee-login" href="/">Admin Login</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" id="customerBtn" href="#">Request Job</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" id="" href="#">About Me</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" id="" href="#">Contact Me</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" id="" href="#">FAQ</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+</nav>
+
 <div class="container-index">
-    <div class="jumbotron bg-dark" id="jumbotron">
-        <h1 id="jumbo-header">Evan Cleary's Portfolio</h1>
-
-        <p>This Website will showcase the applications developed by Evan</p>
-        <hr>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="d-flex justify-content-center">
-                    <a class="btn btn-light btn-md" href="#" id="about-view-button" role="button">About</a>
-                    <a class="btn btn-light btn-md" href="#" id="portfolio-view-button" role="button">Portfolio</a>
-                    <a class="btn btn-light btn-md" href="#" id="contact-view-button" role="button">Contact</a>
-
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="d-flex justify-content-center">
-                    <a class="btn btn-light btn-md" href="https://github.com/evanjcleary" target="_blank"
-                        id="about-view-button" role="button">Github</a>
-                    <a class="btn btn-light btn-md"
-                        href="https://docs.google.com/document/d/1JtOW4IANlj-IzLTQ52KC88A77esmhnbJEhKjUX27vHo/edit?usp=sharing"
-                        target="_blank" id="about-view-button" role="button">Resume</a>
-
-                    <a class="btn btn-light btn-md" href="https://www.linkedin.com/in/evan-cleary-29862036"
-                        target="_blank" id="about-view-button" role="button">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="parralax-index">
     </div>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem officia nostrum iusto, nemo ratione maxime
-        necessitatibus consequuntur, magnam, alias quis commodi fuga optio dignissimos porro. Incidunt accusantium
-        deserunt vel cumque.
-    </p>
+    <div class="row" id="first-row">
+        <div class="col-md-4"><img alt="" id="headshot-img" src="/images/paper_plane_PNG71.png"></div>
+        <div class="col-md-8">
+            <p>ECEnterprises helps individuals and small business owners design websites and web applications. We use
+                intuitive UI/UX design coupled with a robust back-end data management system</p>
+        </div>
+    </div>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repudiandae nisi incidunt quam amet laborum nobis eligendi quis veniam qui ut molestias voluptas a tempore, deserunt quod ducimus tenetur voluptatibus?</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repudiandae nisi incidunt quam amet laborum nobis eligendi quis veniam qui ut molestias voluptas a tempore, deserunt quod ducimus tenetur voluptatibus?</p>
 
     <div class="parralax-index">
     </div>
+
+    <div class="row" id="second-row">
+        <div class="col-md-4"><img alt="" id="headshot-img" src="/images/left-wood-sign.png"></div>
+        <div class="col-md-8">
+            <p>ECEnterprises will offer a free roadmap for your project or idea. We will use our business experience to
+                set realistic S.M.A.R.T. goals for you on the road from M.V.P. to finished product!</p>
+        </div>
+    </div>
+
+    <div class="parralax-index">
+    </div>
+
+    <div class="row" id="first-row">
+        <div class="col-md-4"><img alt="" id="headshot-img" src="/images/car_wheel_PNG23323.png"></div>
+        <div class="col-md-8">
+            <p>I come from humble roots as a car and home insurance salesman. I built from scratch a book of business of
+                over $1.5MM in revenue for various insurance companies. My background in building a business sets my
+                development team apart from most life-long web developers.</p>
+        </div>
+    </div>
+
+    <div class="parralax-index">
+    </div>
+       <h2 style="text-align: center; background: black; color: whitesmoke">View our recent work!</h2>
+    <div class="row" id="second-row" style="text-align: center">
+     
+        <div class="col-md-4">
+            <img alt="" id="headshot-img" src="/images/paper_plane_PNG71.png">
+            <div>Project 1</div>
+            <button class="btn sm-btn btn-outline-success" type="button">LinkedIn</button>
+            <button class="btn sm-button btn-outline-success" type="button">LinkedIn</button>
+        </div>
+        <div class="col-md-4">
+            <img alt="" id="headshot-img" src="/images/paper_plane_PNG71.png">
+            <div>Project 1</div>
+            <button class="btn sm-btn btn-outline-success" type="button">LinkedIn</button>
+            <button class="btn sm-button btn-outline-success" type="button">LinkedIn</button>
+        </div>
+        <div class="col-md-4">
+            <img alt="" id="headshot-img" src="/images/paper_plane_PNG71.png">
+            <div>Project 1</div>
+            <button class="btn sm-btn btn-outline-success" type="button">LinkedIn</button>
+            <button class="btn sm-button btn-outline-success" type="button">LinkedIn</button>
+        </div>
+    </div>
+
+    <div class="row" id="first-row" style="text-align: center">
+        <div class="col-md-4">
+            <img alt="" id="headshot-img" src="/images/paper_plane_PNG71.png">
+            <div>Project 1</div>
+            <button class="btn sm-btn btn-outline-success" type="button">LinkedIn</button>
+            <button class="btn sm-button btn-outline-success" type="button">LinkedIn</button>
+        </div>
+        <div class="col-md-4">
+            <img alt="" id="headshot-img" src="/images/paper_plane_PNG71.png">
+            <div>Project 1</div>
+            <button class="btn sm-btn btn-outline-success" type="button">LinkedIn</button>
+            <button class="btn sm-button btn-outline-success" type="button">LinkedIn</button>    
+        </div>
+        <div class="col-md-4">
+            <img alt="" id="headshot-img" src="/images/paper_plane_PNG71.png">
+            <div>Project 1</div>
+            <button class="btn sm-btn btn-outline-success" type="button">LinkedIn</button>
+            <button class="btn sm-button btn-outline-success" type="button">LinkedIn</button>
+        </div>
+    </div>
+
+    <div class="parralax-index">
+    </div>
+
 
 
 </div>

@@ -22,13 +22,13 @@ body {
     background-size: cover; */
   }
 
-
-
+#navbar-linkbtns {
+    margin-left: 10px;
+}
 
 .container-index {
     max-width: 100%;
     margin: 0 auto;
-    background: #f9f9f9;
     font-size: 24px;
     /* padding: 25px; */
 }
@@ -38,14 +38,14 @@ h1 {
     font-size: 80px;
     text-align: center;
     margin-top: 15px;
-    color: white;
+    color: darkslategrey;
 }
 
 h2 {
     font-size: 45px;
     text-align: center;
-    color: white;
-    font-family: 'Caveat', cursive;
+    color: darkslategrey;
+    font-family: 'FreeMono', monospace
 }
 
 
@@ -53,34 +53,53 @@ h2 {
     background: url("/images/layer-5-foreground-transparent.png"),url("/images/layer-4-hills-transparent.png"),url("/images/layer-3-blackish-transparent.png"),url("/images/layer-2-darkgray-transparent.png"),url("/images/layer-1-gray-transparent.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 500px;
+    height: 200px;
     max-width: 100%;
 }
 
-p {
-    padding: 50px;
+
+#headshot-img {
+    display: block;
+    padding: 20 20 0 10;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
-
-#jumbotron-container {
-    color: white;
+#headshot-img {
+    display: block;
+    padding: 20 20 0 10;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+    
 }
 
-#jumbotron {
-    text-align: center;
+.row {
+    height: 500px;
+    padding: 100px 25px 25px 25px;
+    /* background-image: linear-gradient(to bottom right, purple, gray); */
+    color: black;
+    font-size: 32px;
+    background: whitesmoke;
+    font-family: 'FreeMono', monospace
 }
 
-#about-me-header {
-    text-align: center;
-}
-
-#headshot {
-    text-align: center;
-}
-
-#portfolio-header{
-    text-align: center;
+#second-row {
     color: whitesmoke;
-    font-family: cursive; 
-    font-size: 28px;
+    background: black;
+}
+
+
+@media screen and (max-width: 1060px) {
+    .row {
+        height: 750px;
+    }
+}
+
+p {
+    /* padding: 20 20 0 10; */
+    margin-left: auto;
+    margin-right: auto;
 }
