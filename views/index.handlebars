@@ -3,9 +3,9 @@
     <h3 class="text-white">ECEnterprises, LLC</h3>
 
     <form class="form-inline" id="navbar-linkbtns">
-        <button class="btn btn-outline-success" type="button">LinkedIn</button>
-        <button class="btn btn-outline-success" type="button">Github</button>
-        <button class="btn btn-outline-success" type="button">Resume</button>
+        <button class="btn btn-outline-success" type="button" onclick="window.location.href='https://github.com/evanjcleary'">Github</button>
+        <button class="btn btn-outline-success" type="button" onclick="window.location.href='https://www.linkedin.com/in/evan-cleary-29862036/'">Github</button>
+        <button class="btn btn-outline-success" type="button" onclick="window.location.href='https://docs.google.com/document/d/1JtOW4IANlj-IzLTQ52KC88A77esmhnbJEhKjUX27vHo/edit?usp=sharing'">Resume</button>
     </form>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -22,7 +22,9 @@
                 </a>
                 <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
                 <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" id="employee-login" href="/admin">Admin Login</a>
+                    <button type="button" class="btn btn-outline-success"  onclick="window.location.href='/admin'">
+                            Admin Login
+                        </button>
                     <div class="dropdown-divider"></div>
                     <div class="dropdown-item">
                         <button type="button" class="btn btn-outline-success" data-toggle="modal"
