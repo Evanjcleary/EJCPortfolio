@@ -109,10 +109,18 @@
         </div>
 
         {{/each}}
+        
     </div>
 
+    <div>
+    {{#each featuredRequests}}
+            <div class="card" style="height: 300px">
+                <h2>{{request_name}}</h2>
+                <p>{{request_description}}</p>
+            </div>
 
-
+        {{/each}}
+    </div>
     <div class="parralax-index">
     </div>
 
