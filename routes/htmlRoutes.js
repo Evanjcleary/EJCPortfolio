@@ -13,7 +13,7 @@ module.exports = function (app) {
             featuredJobs: featuredJobsArray
         }
 
-        db.Projects.findAll({}).then(function(data){
+        db.Project.findAll({}).then(function(data){
             for (i = 0; i < data.length; i++) {
                 featuredJobsArray.push(data[i].dataValues);
             }
