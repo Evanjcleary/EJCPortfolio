@@ -1,5 +1,11 @@
 USE l2nvgjrelgansv5x;
 
+SELECT * FROM projects;
+SELECT * FROM requests;
+
+SELECT * FROM Requests;
+SELECT * FROM Projects;
+
 CREATE TABLE IF NOT EXISTS projects (
  id int(11) NOT NULL AUTO_INCREMENT,
  project_name varchar(255) NOT NULL,
@@ -24,7 +30,7 @@ CREATE TABLE IF NOT EXISTS requests (
  PRIMARY KEY (id)
 )
 
-INSERT INTO projects (project_name, 
+INSERT INTO Projects (project_name, 
 project_description, 
 project_repo, 
 deployed_link, 
@@ -35,8 +41,18 @@ VALUES ('Project Management System',
 'https://thawing-falls-91414.herokuapp.com/',
 'http://pngimg.com/uploads/shovel/shovel_PNG7596.png');
 
+INSERT INTO Projects (project_name, 
+project_description, 
+project_repo, 
+deployed_link, 
+image) 
+VALUES ('Philly Sports News Forum', 
+'A web scraper that lists top 10 Philly Sports and allows users to communicate',
+'https://github.com/Evanjcleary/EJCPortfolio',
+'https://phillysportsnews.herokuapp.com',
+'http://pngimg.com/uploads/shovel/shovel_PNG7596.png');
 
-INSERT INTO projects (project_name, 
+INSERT INTO Projects (project_name, 
 project_description, 
 project_repo, 
 deployed_link, 
@@ -48,7 +64,7 @@ VALUES ('Nutri-prep',
 'http://pngimg.com/uploads/turkey_food/turkey_food_PNG27.png');
 
 
-INSERT INTO projects (project_name, 
+INSERT INTO Projects (project_name, 
 project_description, 
 project_repo, 
 deployed_link, 
@@ -59,7 +75,7 @@ VALUES ('Friend Finder',
 'https://enigmatic-ocean-51146.herokuapp.com/',
 'http://pngimg.com/uploads/heart/heart_PNG51351.png');
 
-INSERT INTO projects (project_name, 
+INSERT INTO Projects (project_name, 
 project_description, 
 project_repo, 
 deployed_link, 
@@ -71,7 +87,7 @@ VALUES ('Bamazon',
 'http://pngimg.com/uploads/scales/scales_PNG77.png');
 
 
-INSERT INTO projects (project_name, 
+INSERT INTO Projects (project_name, 
 project_description, 
 project_repo, 
 deployed_link, 
@@ -82,7 +98,7 @@ VALUES ('Language Interpretation and Response Interface',
 'https://share.getcloudapp.com/Wnuw42d5',
 'http://pngimg.com/uploads/bulb/bulb_PNG1250.png');
 
-INSERT INTO projects (project_name, 
+INSERT INTO Projects (project_name, 
 project_description, 
 project_repo, 
 deployed_link, 
