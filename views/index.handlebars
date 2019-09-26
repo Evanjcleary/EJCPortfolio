@@ -98,7 +98,7 @@
     <h2 style="text-align: center; background: black; color: whitesmoke">View my recent work!</h2>
     <div class="row portfolio-row" id="second-row" style="text-align: center; height: 100%">
 
-        {{#each featuredJobs}}
+        {{#each projects}}
         <div class="col-md-4">
             <img src="{{image}}" id="headshot-img" alt="Project-{{id}}">
             <div>{{project_name}}</div>
@@ -113,7 +113,7 @@
     </div>
 
     <div class="card" style="background: red; height: 1200px">
-    {{#each featuredRequests}}
+    {{#each requests}}
             <div class="card" style="height: 300px">
                 <h2>{{request_name}}</h2>
                 <p>{{request_description}}</p>

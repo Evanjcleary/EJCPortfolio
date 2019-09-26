@@ -11,8 +11,8 @@ module.exports = function (app) {
         var featuredRequestsArray = [];
 
         homeObject = {
-            featuredJobs: featuredJobsArray,
-            featuredRequests: featuredRequestsArray
+            projects: featuredJobsArray,
+            requests: featuredRequestsArray
         }
         // alert("searching for projects")
         db.Project.findAll({}).then(function (data) {
