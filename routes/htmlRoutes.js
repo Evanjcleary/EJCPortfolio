@@ -14,9 +14,11 @@ module.exports = function (app) {
             featuredJobs: featuredJobsArray,
             featuredRequests: featuredRequestsArray
         }
-
+        console.log("searching for projects)")
         db.Project.findAll({}).then(function (data) {
             for (i = 0; i < data.length; i++) {
+                console.log("looping through projects")
+                console.log(data[i].dataValues);
                 featuredJobsArray.push(data[i].dataValues);
             }
             db.Request.findAll({}).then(function (data) {
