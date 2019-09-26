@@ -52,7 +52,7 @@ VALUES ('Philly Sports News Forum',
 'A web scraper that lists top 10 Philly Sports and allows users to communicate',
 'https://github.com/Evanjcleary/EJCPortfolio',
 'https://phillysportsnews.herokuapp.com',
-'http://pngimg.com/uploads/shovel/shovel_PNG7596.png');
+'http://pngimg.com/uploads/baseball/baseball_PNG19065.png');
 
 INSERT INTO projects (project_name, 
 project_description, 

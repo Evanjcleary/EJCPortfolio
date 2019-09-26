@@ -15,24 +15,27 @@ module.exports = function (app) {
             requests: featuredRequestsArray
         }
         // alert("searching for projects")
-        db.Project.findAll({}).then(function (data) {
-            for (i = 0; i < data.length; i++) {
+        db.Project.findAll({}).then(function (data1) {
+            for (i = 0; i < data1.length; i++) {
                 console.log("looping through projects")
-                console.log(data[i].dataValues);
-                featuredJobsArray.push(data[i].dataValues);
+                console.log(data1[i].dataValues);
+                featuredJobsArray.push(data1[i].dataValues);
             }
-            db.Request.findAll({}).then(function (data) {
-                for (j = 0; j < data.length; j++) {
-                    console.log(data[j].dataValues);
-                    featuredRequestsArray.push(data[j].dataValues);
+            
+        })
+        setTimeout(function(){
+
+            db.Request.findAll({}).then(function (data2) {
+                for (j = 0; j < data2.length; j++) {
+                    console.log(data2[j].dataValues);
+                    featuredRequestsArray.push(data2[j].dataValues);
                 }
             })
-        })
+        }, 500)
 
-
-
+        setTimeout(function(){ 
         res.render("index", homeObject);
-
+    }, 1000)
     });
 
 
