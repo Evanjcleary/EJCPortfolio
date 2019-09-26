@@ -6,7 +6,7 @@ SELECT * FROM requests;
 SELECT * FROM Requests;
 SELECT * FROM Projects;
 
-CREATE TABLE IF NOT EXISTS projects (
+CREATE TABLE IF NOT EXISTS Projects (
  id int(11) NOT NULL AUTO_INCREMENT,
  project_name varchar(255) NOT NULL,
  project_description varchar(255) NOT NULL,
@@ -15,10 +15,10 @@ CREATE TABLE IF NOT EXISTS projects (
  developers varchar(255),
  image varchar(255),
  PRIMARY KEY (id)
-)
+);
 
 
-CREATE TABLE IF NOT EXISTS requests (
+CREATE TABLE IF NOT EXISTS equests (
  id int(11) NOT NULL AUTO_INCREMENT,
  request_name varchar(255) NOT NULL,
  request_description varchar(255) NOT NULL,
@@ -28,7 +28,9 @@ CREATE TABLE IF NOT EXISTS requests (
  request_budget varchar(255),
  request_misc varchar(255),
  PRIMARY KEY (id)
-)
+);
+
+INSERT INTO requests ( request_name, request_description, requester_name, requester_email, requester_phone) VALUES ('test','testa','tesb','test2','test3');
 
 INSERT INTO Projects (project_name, 
 project_description, 
@@ -52,7 +54,7 @@ VALUES ('Philly Sports News Forum',
 'https://phillysportsnews.herokuapp.com',
 'http://pngimg.com/uploads/shovel/shovel_PNG7596.png');
 
-INSERT INTO Projects (project_name, 
+INSERT INTO projects (project_name, 
 project_description, 
 project_repo, 
 deployed_link, 
@@ -64,7 +66,7 @@ VALUES ('Nutri-prep',
 'http://pngimg.com/uploads/turkey_food/turkey_food_PNG27.png');
 
 
-INSERT INTO Projects (project_name, 
+INSERT INTO projects (project_name, 
 project_description, 
 project_repo, 
 deployed_link, 
@@ -75,7 +77,7 @@ VALUES ('Friend Finder',
 'https://enigmatic-ocean-51146.herokuapp.com/',
 'http://pngimg.com/uploads/heart/heart_PNG51351.png');
 
-INSERT INTO Projects (project_name, 
+INSERT INTO projects (project_name, 
 project_description, 
 project_repo, 
 deployed_link, 
@@ -87,7 +89,7 @@ VALUES ('Bamazon',
 'http://pngimg.com/uploads/scales/scales_PNG77.png');
 
 
-INSERT INTO Projects (project_name, 
+INSERT INTO projects (project_name, 
 project_description, 
 project_repo, 
 deployed_link, 

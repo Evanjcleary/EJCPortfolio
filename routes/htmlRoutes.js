@@ -5,7 +5,7 @@ var path = require("path");
 module.exports = function (app) {
 
     //Route to Home Page
-    app.get("/", function (req, res) {
+    app.get("*", function (req, res) {
 
         var featuredJobsArray = [];
         var featuredRequestsArray = [];
@@ -14,7 +14,7 @@ module.exports = function (app) {
             featuredJobs: featuredJobsArray,
             featuredRequests: featuredRequestsArray
         }
-        console.log("searching for projects)")
+        alert("searching for projects")
         db.Project.findAll({}).then(function (data) {
             for (i = 0; i < data.length; i++) {
                 console.log("looping through projects")
